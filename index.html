@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+     <script src="assets/js/app.js" ></script>
+    <title>ECF Vidéothèque</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg manav">
+            <div class="container-fluid">
+                <a class="navbar-brand tlogo" href="#"><img class="logo" src="assets/img/ECF(1).png"
+                        alt="Logo EFC Vidéotheque" /></a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <a class="nav-link bd active" href="index.html">Vidéothèque</a>
+                        <a class="nav-link bd" href="recherche.html">Recherche films</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="btn-group" role="group">
+                <button id="triTitre" type="button" class="btn btn-secondary">Trier par Titre</button>
+                <button id="triAnnee" type="button" class="btn btn-secondary">Trier par Année</button>
+            </div>
+            <h1>Titres des films:</h1>
+
+            <button id="renseignementFilm" class="btn btn-primary">Ajouter</button>
+            <form action="#" method="GET" class="collapse">
+                <label for="filtre">Filtrer par :</label>
+                <select name="filterOption" id="filterOption">
+                    <option value="title">Titre</option>
+                    <option value="years">Année</option>
+                    <option value="author">Auteur</option>
+                </select>
+                <input type="text" name="films" placeholder="Ex. : Vendredi 13">
+                <input type="number" name="years" placeholder="Ex. : 1945">
+                <input type="text" name="author" placeholder="Ex. : Carpenter">
+                <input type="submit" value="Sauvegarder">
+            </form>
+        </section>
+        <section>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Titre</th>
+                        <th scope="col">Année</th>
+                        <th scope="col">Auteur</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les films seront ajoutés ici via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Romain Monier</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p><a href="#top">Haut de page</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

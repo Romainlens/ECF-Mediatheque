@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: url("../img/pexels-markus-spiske-2672097.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  /* Styles pour la page d'accueil */
+  .manav {
+    background-color: #d2b4de;
+    padding: 0;
+  }
+  
+  .logo {
+    border: solid 4px pink;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .navbar-expand-lg {
+    height: fit-content;
+  }
+  
+  .nav-link {
+    color: white;
+    background-color: #87BB34;
+  }
+  
+  .nav-link:hover {
+    color: #44A33D;
+    box-shadow: 3px 3px 3px purple;
+  }
+  
+  #triTitre, #triAnnee {
+    margin-top: 20px;
+  }
+  
+  /* Styles pour le tableau */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border: 3px solid purple;
+  }
+  
+  thead {
+    background-color: yellow;
+  }
+  
+  td, th {
+    border: thin solid #6495ed;
+    width: 50%;
+  }
+  
+  /* Boutons "Supprimer" */
+  .btn-danger {
+    background-color: red;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: darkred;
+  }
+  
+  /* Titre "Titres des films" */
+  h1 {
+    background-color: #44A33D;
+    border-radius: 50px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  /* Formulaire de filtre et de tri */
+  form {
+    margin-top: 20px;
+  }
+  
+  select, input {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  /* Bouton "Ajouter" */
+  #renseignementFilm {
+    margin-top: 20px;
+  }
+  
+  /* Styles pour les alertes */
+  .alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #44A33D;
+    color: white;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+  
+  /* Styles pour la page de recherche de films */
+  #results {
+    text-align: center;
+}
+
+/* Styles pour la pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    border-radius: 50%;
+    min-width: 32px;
+    min-height: 32px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #e70f0f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+/*.move-up {
+    transition: transform 0.3s ease-in-out;
+}*/
+.move-up.active {
+    transform: translateY(-100%);
+}
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e70f0f;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 999; /* Ajoutez une valeur de z-index pour empêcher que le footer ne cache le contenu */
+}
+
+.move-up {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0); /* Modifiez la valeur pour que le contenu soit masqué en-dessous du footer */
+}
+
+
