@@ -111,7 +111,7 @@
   }
   
   /* Styles pour la page de recherche de films */
-  #results {
+  #results {git push
     text-align: center;
     min-height: 100dvh;
 }
@@ -168,12 +168,12 @@
     background-color: #e70f0f;
     color: #fff;
     padding: 20px 0;
-    z-index: 999; /* Ajoutez une valeur de z-index pour empêcher que le footer ne cache le contenu */
+    z-index: 999; /* Ajoute une valeur de z-index pour empêcher que le footer ne cache le contenu */
 }
 
 .move-up {
     transition: transform 0.3s ease-in-out;
-    transform: translateY(0); /* Modifiez la valeur pour que le contenu soit masqué en-dessous du footer */
+    transform: translateY(0); /* Modifie la valeur pour que le contenu soit masqué en-dessous du footer */
 }
 
 
