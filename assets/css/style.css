@@ -46,6 +46,7 @@
   
   /* Styles pour le tableau */
   table {
+  
     width: 100%;
     border-collapse: separate;
     border: 3px solid purple;
@@ -112,6 +113,7 @@
   /* Styles pour la page de recherche de films */
   #results {
     text-align: center;
+    min-height: 100dvh;
 }
 
 /* Styles pour la pagination */
